@@ -40,10 +40,15 @@ int main(int argc, char **argv) {
 
     //subtraction oparator
     result = a - b;
-    printf("%f - %f=%.2f", result);
+    printf("%f - %f=%.2f",a,b, result);
   } else if(choice == 3) {
     //TODO: handle this case (multiplication)
   } else if(choice == 4) {
+    //multiplication oparator
+
+    result=a*b;
+
+    printf("%f * %f =%.2f", a,b, result);
     //TODO: handle this case (division)
   } else if(choice == 5) {
     //TODO: handle this case (minimum)
