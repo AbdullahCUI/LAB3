@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
  if(isLeapYear(year)){
   printf("PASSED !\n");
 
-  numPassed=numPassed+1;
+  numFailed=numFailed+1;
  }
 
 year= 3031;
@@ -77,7 +77,7 @@ printf("test case 5:year %d: ", year);
 if(isLeapYear(year)){
   printf("PASSED!\n");
 
-  numPassed=numPassed+1;
+  numFailed=numFailed+1;
 }
 
 year =2011;
@@ -86,7 +86,7 @@ if(isLeapYear(year)){
   
   printf("PASSED!\n");
 
-  numPassed=numPassed+1;
+  numFailed=numFailed+1;
 }
  
 
@@ -95,6 +95,8 @@ if(isLeapYear(year)){
   printf("Summary:\n");
   printf("Number of test cases passed: %d\n", numPassed);
   printf("Number of test cases failed: %d\n", numFailed);
+ 
+
   printf("Percentage Passed: %.2f%%\n", (double) numPassed / (numPassed + numFailed) * 100.0);
 
   if(reportPass) {
