@@ -51,6 +51,13 @@ int main(int argc, char **argv) {
     printf("%f * %f =%.2f", a,b, result);
     //TODO: handle this case (division)
   } else if(choice == 5) {
+
+    //division 
+    if (b!=0){
+      result=a/b;
+
+      printf("%f / %f =%.2f", a,b,result);
+    }
     //TODO: handle this case (minimum)
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
