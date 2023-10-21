@@ -1,6 +1,7 @@
 /**
- * Author:
- * Date:
+ * Author:Abdullah
+ * 
+ * Date:2023/21/10
  *
  * This programs provides basic calculator functionality
  * allowing a user to enter two operands and to compute
@@ -32,7 +33,9 @@ int main(int argc, char **argv) {
   scanf("%d", &choice);
 
   if(choice == 1) {
-    printf("%f", a + b);
+
+    result=a+b;
+    printf("%f + %f =%f", result);
   } else if(choice == 2) {
     result = a - b;
     printf("%f", result);
