@@ -43,9 +43,9 @@ int main()
   } else if (agi>=19901 && agi <=81050){
     
     tax=1990 + 0.12 * (agi - 19900);
-  } else if (agi >=18051 && agi <=172750){
+  } else if (agi >=81051 && agi <=172750){
 
-    tax=9328 + 0.22 * (agi - 18050);//
+    tax=9328 + 0.22 * (agi - 81050);//
 
     
   } else if (agi>= 172751 && agi <=329850){
@@ -60,17 +60,15 @@ int main()
 
     
   }
-  childCridet=numOfchilderns*200;
+  childCridet=numOfchilderns*2000;
   totalTax=(tax - childCridet);
 
-  printf("AGI =>  $%.2f", agi);
-  printf("TAX =>  $%.2f",tax);
-  printf("Child Credti =>  $%.2f",childCridet);
-
-  priintf("Total Tax =>  $%.2f",totalTax);
+  printf("AGI =>  $%.2f\n", agi);
+  printf("TAX =>  $%.2f\n",tax);
+  printf("Child Credti =>  $%.2f\n",childCridet);
+  printf("Total Tax =>  $%.2f",totalTax);
 
 }
- 
 
 
  
