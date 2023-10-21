@@ -17,7 +17,7 @@ int main()
 
  float tax;
 
- float totaltax;
+ float totalTax;
 
   printf("Please Enter Agi-->");
 
@@ -38,7 +38,7 @@ int main()
   }
   if (agi>=0 && agi <=19900){
 
-    crildCridet=200;
+    childCridet=200;
     tax=agi*0.10;
   } else if (agi>=19901 && agi <=81050){
     
@@ -65,6 +65,9 @@ int main()
 
   printf("AGI =>  $%.2f", agi);
   printf("TAX =>  $%.2f",tax);
+  printf("Child Credti =>  $%.2f",childCridet);
+
+  priintf("Total Tax =>  $%.2f",totalTax);
 
 }
  
