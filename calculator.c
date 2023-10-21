@@ -33,12 +33,14 @@ int main(int argc, char **argv) {
   scanf("%d", &choice);
 
   if(choice == 1) {
-
+//addition oparator
     result=a+b;
     printf("%f + %f =%.2f",a,b, result);
   } else if(choice == 2) {
+
+    //subtraction oparator
     result = a - b;
-    printf("%f", result);
+    printf("%f - %f=%.2f", result);
   } else if(choice == 3) {
     //TODO: handle this case (multiplication)
   } else if(choice == 4) {
