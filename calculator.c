@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
   if(choice == 1) {
 
     result=a+b;
-    printf("%f + %f =%f", result);
+    printf("%f + %f =%.2f",a,b, result);
   } else if(choice == 2) {
     result = a - b;
     printf("%f", result);
