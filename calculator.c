@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int main(int argc, char **argv) {
 
   double a, b, result;
@@ -58,10 +59,20 @@ int main(int argc, char **argv) {
 
       printf("%f / %f =%.2f", a,b,result);
   } else if(choice == 5) {
+//TODO: handle this case (minimum)
+    
+    if(a<b){
+      result=a;
+      printf("Minimum between %.2f and %.2f =%.2f",a,b,result);
+    } else 
 
+    result=b;
+    printf(" Minimum %.2f =%.2f",b,result);
+   }
    
-    }
-    //TODO: handle this case (minimum)
+   
+    
+    
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
   } else {
