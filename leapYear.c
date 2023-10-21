@@ -58,7 +58,17 @@ int main(int argc, char **argv) {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
+ year = 2021;
 
+ printf("Test case 4: year=%d : ",year);
+
+ if(isLeapYear(year)){
+  printf("PASSED !\n");
+
+  numPassed=numPassed+1;
+ }
+
+ 
   //TODO: write *at least* 3 more of your own
   //      test cases here, they should all pass!
 
