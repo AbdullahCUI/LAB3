@@ -5,7 +5,7 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
-
+int main()
 {
 
   char c;
@@ -42,16 +42,29 @@
     tax=agi*0.10;
   } else if (agi>=19901 && agi <=81050){
     
-    tax=1990+0.12 *(agi-19900);
+    tax=1990 + 0.12 * (agi - 19900);
   } else if (agi >=18051 && agi <=172750){
 
-    tax=9328 +0.22 *(agi-18050);//
+    tax=9328 + 0.22 * (agi - 18050);//
 
     
   } else if (agi>= 172751 && agi <=329850){
 
-    tax=29502 + 0.24 *(agi-172750);
-  } 
+    tax=29502 + 0.24 * (agi - 172750);
+  }  else if (agi>=329851 && agi <=418850){
+
+    tax= 27206 + 0.32 * (agi - 329850);
+  } else if (agi >=418851){
+
+    tax=95686 + 0.35 * (agi - 418851);
+
+    
+  }
+  childCridet=numOfchilderns*200;
+  totalTax=(tax - childCridet);
+
+  printf("AGI =>  $%.2f", agi);
+  printf("TAX =>  $%.2f",tax);
 
 }
  
